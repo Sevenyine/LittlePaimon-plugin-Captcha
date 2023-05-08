@@ -38,20 +38,20 @@ __plugin_meta__ = PluginMetadata(
 
 
 sign = on_command(
-    "mys签到",
-    aliases={"米游社签到", "mys自动签到", "米游社自动签到", "原神签到"},
+    "备用mys签到",
+    aliases={"备用米游社签到", "备用mys自动签到", "备用米游社自动签到", "备用原神签到"},
     priority=2,
     block=True,
     state={
-        "pm_name": "米游社签到",
+        "pm_name": "备用米游社签到",
         "pm_description": "*执行米游社签到操作，或开启每日自动签到",
         "pm_usage": "米游社签到(uid)[on|off]",
         "pm_priority": 1,
     },
 )
 all_sign = on_command(
-    "全部重签",
-    aliases={"mys全部重签", "米游社全部重签", "原神全部重签"},
+    "备用全部重签",
+    aliases={"备用mys全部重签", "备用米游社全部重签", "备用原神全部重签"},
     priority=2,
     block=True,
     permission=SUPERUSER,
@@ -64,8 +64,8 @@ all_sign = on_command(
     },
 )
 get_coin = on_command(
-    "myb获取",
-    aliases={"米游币获取", "myb自动获取", "米游币自动获取", "米游币任务"},
+    "备用myb获取",
+    aliases={"备用米游币获取", "备用myb自动获取", "备用米游币自动获取", "备用米游币任务"},
     priority=2,
     block=True,
     state={
@@ -76,8 +76,8 @@ get_coin = on_command(
     },
 )
 all_coin = on_command(
-    "myb全部重做",
-    aliases={"米游币全部重做"},
+    "备用myb全部重做",
+    aliases={"备用米游币全部重做"},
     priority=2,
     block=True,
     permission=SUPERUSER,
